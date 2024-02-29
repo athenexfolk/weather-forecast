@@ -1,0 +1,11 @@
+<Card>
+  <span class="text-sm font-semibold">รู้สึกเหมือน</span>
+  <span class="grow text-4xl">{{ feelLike | roundFloor }} º</span>
+  <span class="my-2">{{
+    (currentTemp | roundFloor) === (feelLike | roundFloor)
+      ? "รู้สึกเหมือนอุณหภูมิจริง"
+      : (currentTemp | roundFloor) > (feelLike | roundFloor)
+      ? "ความชื้นทำให้รู้สึกว่าร้อนขึ้น"
+      : "รู้สึกเย็นกว่าอุณหภูมิจริง"
+  }}</span>
+</Card>

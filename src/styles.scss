@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Noto Sans Thai";
+  src: url("assets/fonts/NotoSansThai.ttf");
+}
+
+body {
+  font-family: "Noto Sans Thai";
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.bg-clear {
+  background-image: url("assets/images/clear.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

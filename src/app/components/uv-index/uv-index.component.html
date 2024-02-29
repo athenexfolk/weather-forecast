@@ -1,0 +1,10 @@
+<Card>
+  <span class="text-sm font-semibold">ดัชนีรังสี UV</span>
+  <span class="grow text-4xl">{{ uv }}</span>
+  <div class="rounded-full shadow h-2 bg-uv relative my-2">
+    <div
+      class="absolute size-4 bg-white shadow rounded-full -top-1"
+      [style.left]="(uv * 100) / 11 + '%'"
+    ></div>
+  </div>
+</Card>

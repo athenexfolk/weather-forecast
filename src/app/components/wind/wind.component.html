@@ -1,0 +1,15 @@
+<Card>
+  <span class="text-sm font-semibold">ลม</span>
+  <span class="grow text-4xl"
+    >{{ speed }}
+    <span class="text-sm">กม./ชม.</span>
+  </span>
+  <span class="flex gap-2 items-center my-2">
+    <img
+      src="assets/images/arrow.png"
+      class="size-8 invert"
+      [style.transform]="'rotate(' + degree + 'deg)'"
+    />
+    {{ degree }} ({{ direction }})
+  </span>
+</Card>
